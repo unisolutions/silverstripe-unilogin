@@ -1,0 +1,12 @@
+en:
+  UniLogIn:
+    Title: 'Choose member to login'
+    Content: 'Choose member to login. Currently logged as {name}.'
+    PermissionUniLogInName: 'Login as other user with UniLogIn'
+    PermissionUniLogInCategory: 'UniLogIn Access'
+    PermissionUniLogInHelp: 'Allow for a user to login as other user without authentication process'
+    ColID: 'ID'
+    ColTitle: 'Title'
+    ColEmail: 'Email'
+    ColGroups: 'Groups'
+    LogIn: 'login'

@@ -1,0 +1,7 @@
+---
+Name: unilogin
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'unilogin//$Action/$ID' : 'UniLogInController'

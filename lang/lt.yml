@@ -1,0 +1,12 @@
+lt:
+  UniLogIn:
+    Title: 'Pasirinkite vartotoją'
+    Content: 'Pasirinkite vartotoją, kuriuo norite prisijungti. Šiuo metu esate prisijungęs kaip {name}.'
+    PermissionUniLogInName: 'Prisijungti kaip kitas vartotojas naudojant UniLogIn'
+    PermissionUniLogInCategory: 'UniLogIn prieiga'
+    PermissionUniLogInHelp: 'Galimybė vartotojui prisijungti kitu vartotoju apeinant prisijungimo procesą'
+    ColID: 'ID'
+    ColTitle: 'Pavadinimas'
+    ColEmail: 'El. paštas'
+    ColGroups: 'Grupės'
+    LogIn: 'prisijungti'

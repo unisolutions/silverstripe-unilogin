@@ -1,0 +1,18 @@
+{
+	"name": "unisolutions/silverstripe-unilogin",
+	"type": "silverstripe-module",
+	"description": "This SilverStripe module adds ability to login as any member without authorization.",
+	"keywords": ["silverstripe"],
+	"authors": [{
+		"name": "Elvinas Liutkevičius",
+		"email": "elvinas@unisolutions.eu",
+		"homepage": "http://www.unisolutions.eu"
+	}],
+	"minimum-stability": "dev",
+	"require": {
+		"silverstripe/framework": "3.*"
+	},
+	"extra": {
+		"installer-name": "unilogin"
+	}
+}
