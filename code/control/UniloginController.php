@@ -8,17 +8,17 @@
  */
 class UniLogInController extends Controller implements PermissionProvider {
 
-  const ACL_CHECK_NONE               = 0; // should not be used
-  const ACL_CHECK_ADMIN              = 1; // default
-  const ACL_CHECK_PERMISSSIONS       = 2;
-  const ACL_CHECK_ALLOWED_IP         = 4;
-  const ACL_CHECK_ALLOWED_EMAIL_ADDR = 8;
+	const ACL_CHECK_NONE               = 0; // should not be used
+	const ACL_CHECK_ADMIN              = 1; // default
+	const ACL_CHECK_PERMISSSIONS       = 2;
+	const ACL_CHECK_ALLOWED_IP         = 4;
+	const ACL_CHECK_ALLOWED_EMAIL_ADDR = 8;
 
-  private static $access_control_policy = 'self::ACL_CHECK_ADMIN';
+	private static $access_control_policy = 'self::ACL_CHECK_ADMIN';
 
-  private static $allowed_ip_list = array();
+	private static $allowed_ip_list = array();
 
-  private static $allowed_email_list = array();
+	private static $allowed_email_list = array();
 
 
 	private static $allowed_actions = array(
@@ -76,7 +76,7 @@ class UniLogInController extends Controller implements PermissionProvider {
 	public function index() {
 		Requirements::css(UNILOGIN_MODULE_DIR . '/css/style.css');
 		// TODO. Add as composer requirement?
-		Requirements::css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'); 
+		Requirements::css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css');
 
 		if (class_exists('SiteTree')) {
 			$tmpPage = new Page();
@@ -110,8 +110,8 @@ class UniLogInController extends Controller implements PermissionProvider {
 		return $this->redirect('/');
 	}
 
-  public function providePermissions() {
-  	if ($this->isACLFlagSet(self::ACL_CHECK_PERMISSSIONS)) {
+	public function providePermissions() {
+		if ($this->isACLFlagSet(self::ACL_CHECK_PERMISSSIONS)) {
 			return array(
 				'UniLogIn' => array(
 					'name'     => _t('UniLogIn.PermissionUniLogInName', 'Login as other user with UniLogIn'),
@@ -121,6 +121,6 @@ class UniLogInController extends Controller implements PermissionProvider {
 			);
 		}
 		return false;
-  }
+	}
 
 }
