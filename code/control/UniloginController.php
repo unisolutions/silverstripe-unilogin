@@ -28,7 +28,7 @@ class UniLogInController extends Controller implements PermissionProvider {
 
 	private function getConfiguredPolicy() {
 		// TODO. eval() should not be used here?
-		return eval($this->config()->access_control_policy);
+		return eval('return ' . $this->config()->access_control_policy . ';');
 	}
 
 	private function isACLFlagSet($flag) {
